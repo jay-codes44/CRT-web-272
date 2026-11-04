@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#fbf4ea" />
+  <meta name="description" content="The Six Thinking Hats applied to the AI-Based Personalized Learning Assistant case." />
+  <title>The Six Thinking Hats · AI Learning Assistant Case</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="bg-ambient" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="blob b4"></span>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand">Six <span>Hats</span></a>
+      <div class="nav-links">
+        <a href="#case">Case Study</a>
+        <a href="#framework">The Hats</a>
+        <a href="#journey">The Journey</a>
+        <a href="#conclusion">Conclusion</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">A Critical Thinking Exercise</span>
+        <h1>Six Hats,<br />One<span class="soft"> Hard Decision.</span></h1>
+        <p class="lede">
+          Applying <strong>Edward de Bono's Six Thinking Hats</strong> to a real campus
+          dilemma — should a college adopt an AI-powered learning assistant?
+        </p>
+        <div class="hero-actions">
+          <a href="#framework" class="btn btn-primary">Explore the Hats</a>
+          <a href="#case" class="btn btn-ghost">Read the Case</a>
+        </div>
+      </div>
+      <div class="hero-hats reveal" id="heroOrbs">
+        <div class="hat-orb hat-white">W</div>
+        <div class="hat-orb hat-red">R</div>
+        <div class="hat-orb hat-black">B</div>
+        <div class="hat-orb hat-yellow">Y</div>
+        <div class="hat-orb hat-green">G</div>
+        <div class="hat-orb hat-blue">B</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Case Scenario ===== -->
+  <section class="section case" id="case">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Scenario</span>
+        <h2>The Case: AI-Based Personalized Learning Assistant</h2>
+      </div>
+      <div class="case-card reveal">
+        <div class="case-card-body">
+          <p>
+            A <strong>tech company</strong> has proposed an <strong>AI-powered learning assistant</strong>
+            to the college, which is actively considering the tool across <strong>all departments</strong>.
+          </p>
+          <p>The AI is designed to:</p>
+          <ul class="what-list">
+            <li><span class="w-bullet">📈</span> Track student progress</li>
+            <li><span class="w-bullet">🎯</span> Personalize educational content</li>
+            <li><span class="w-bullet">🛎️</span> Send early-warning alerts to faculty when a student is at risk of falling behind</li>
+          </ul>
+          <div class="tension">
+            <p><strong>The tension:</strong> Students and faculty worry about <em>data privacy</em>,
+            <em>AI over-reliance</em>, and <em>bias</em> — yet the tool promises major learning benefits.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Framework intro ===== -->
+  <section class="section intro" id="framework">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Method</span>
+        <h2>What are the Six Thinking Hats?</h2>
+        <p class="sub">
+          A structured technique by <strong>Edward de Bono</strong> that lets a group focus
+          <em>parallel thinking</em> on one aspect at a time — cutting out snap decisions
+          and ineffective behaviour.
+        </p>
+      </div>
+      <div class="hat-legend reveal">
+        <div class="legend-item"><span class="chip hat-white"></span>White · Facts</div>
+        <div class="legend-item"><span class="chip hat-red"></span>Red · Feelings</div>
+        <div class="legend-item"><span class="chip hat-black"></span>Black · Caution</div>
+        <div class="legend-item"><span class="chip hat-yellow"></span>Yellow · Value</div>
+        <div class="legend-item"><span class="chip hat-green"></span>Green · Creativity</div>
+        <div class="legend-item"><span class="chip hat-blue"></span>Blue · Process</div>
+      </div>
+
+      <div class="hat-explorer" id="explorer">
+        <div class="hat-tabs" id="hatTabs">
+          <button class="hat-tab active" data-hat="white"><span class="tab-chip hat-white"></span>White</button>
+          <button class="hat-tab" data-hat="red"><span class="tab-chip hat-red"></span>Red</button>
+          <button class="hat-tab" data-hat="black"><span class="tab-chip hat-black"></span>Black</button>
+          <button class="hat-tab" data-hat="yellow"><span class="tab-chip hat-yellow"></span>Yellow</button>
+          <button class="hat-tab" data-hat="green"><span class="tab-chip hat-green"></span>Green</button>
+          <button class="hat-tab" data-hat="blue"><span class="tab-chip hat-blue"></span>Blue</button>
+        </div>
+
+        <div class="hat-detail hat-detail-white active" id="white">
+          <div class="detail-top">
+            <h3>White Hat — Facts &amp; Information</h3>
+            <span class="hat-flag">Objective thinking</span>
+          </div>
+          <div class="detail-grid">
+            <div class="attr-box">
+              <h4>Attributes of this hat</h4>
+              <ul>
+                <li>Focuses on facts, data &amp; information</li>
+                <li>Neutral &amp; objective — no opinions or judgments</li>
+                <li>Asks “What do we actually know?”</li>
+                <li>Flags what information is still missing</li>
+              </ul>
+            </div>
+            <div class="attr-box">
+              <h4>Applied to the case</h4>
+              <ul>
+                <li>The AI tracks progress, personalizes content, alerts faculty</li>
+                <li>College is considering rollout across all departments</li>
+                <li><strong>Missing:</strong> encryption protocols, storage location, whether the company retains access</li>
+                <li><strong>Needed:</strong> exact “at-risk” metrics + case studies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hat-detail hat-detail-red" id="red">
+          <div class="detail-top">
+            <h3>Red Hat — Feelings &amp; Intuition</h3>
+            <span class="hat-flag">Emotional thinking</span>
+          </div>
+          <div class="detail-grid">
+            <div class="attr-box">
+              <h4>Attributes of this hat</h4>
+              <ul>
+                <li>Focuses on emotions, intuition &amp; gut reactions</li>
+                <li>No burden of logical justification</li>
+                <li>Gives a voice to feelings and hunches</li>
+                <li>Asks “How do we feel about this?”</li>
+              </ul>
+            </div>
+            <div class="attr-box">
+              <h4>Applied to the case</h4>
+              <ul>
+                <li>An algorithm silently tracking every move <em>feels intrusive</em></li>
+                <li>Fear of being unfairly judged or profiled by a machine</li>
+                <li>Drawn to convenience, but uncomfortable with privacy loss</li>
+                <li>Gut reaction: pressure, frustration, protective instinct toward peers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hat-detail hat-detail-black" id="black">
+          <div class="detail-top">
+            <h3>Black Hat — Caution &amp; Risks</h3>
+            <span class="hat-flag">Critical thinking</span>
+          </div>
+          <div class="detail-grid">
+            <div class="attr-box">
+              <h4>Attributes of this hat</h4>
+              <ul>
+                <li>Focuses on risks, dangers &amp; downside</li>
+                <li>Critical risk management &amp; caution</li>
+                <li>Spots loopholes and potential obstacles</li>
+                <li>Asks “What could go wrong?”</li>
+              </ul>
+            </div>
+            <div class="attr-box">
+              <h4>Applied to the case</h4>
+              <ul>
+                <li><strong>Data breach</strong> could expose sensitive academic &amp; personal records</li>
+                <li>Over-reliance on spoon-fed content may stunt independent critical thinking</li>
+                <li>Hard to build airtight privacy infrastructure — adoption fails without trust</li>
+                <li>Rushed rollout risks unauthorized use of private data</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hat-detail hat-detail-yellow" id="yellow">
+          <div class="detail-top">
+            <h3>Yellow Hat — Benefits &amp; Value</h3>
+            <span class="hat-flag">Optimistic thinking</span>
+          </div>
+          <div class="detail-grid">
+            <div class="attr-box">
+              <h4>Attributes of this hat</h4>
+              <ul>
+                <li>Focuses on positives, advantages &amp; added value</li>
+                <li>Deliberate optimism and constructive outlook</li>
+                <li>Explores the potential upside</li>
+                <li>Asks “How does this help?”</li>
+              </ul>
+            </div>
+            <div class="attr-box">
+              <h4>Applied to the case</h4>
+              <ul>
+                <li>Improves learning efficiency &amp; overall academic performance</li>
+                <li>Personalized content tailored to each student's pace</li>
+                <li>Transforms delivery of educational support</li>
+                <li>Every student gets a highly individualized learning experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hat-detail hat-detail-green" id="green">
+          <div class="detail-top">
+            <h3>Green Hat — Creativity &amp; Alternatives</h3>
+            <span class="hat-flag">Creative thinking</span>
+          </div>
+          <div class="detail-grid">
+            <div class="attr-box">
+              <h4>Attributes of this hat</h4>
+              <ul>
+                <li>Focuses on new ideas &amp; fresh perspectives</li>
+                <li>Generates creative alternatives</li>
+                <li>Moves beyond “yes or no”</li>
+                <li>Asks “What else could we do?”</li>
+              </ul>
+            </div>
+            <div class="attr-box">
+              <h4>Applied to the case</h4>
+              <ul>
+                <li>Pilot in <strong>one tech-literate department</strong> first</li>
+                <li>AI notifies at-risk students + <strong>one-click voluntary</strong> mentoring session</li>
+                <li>Shift perspective: from surveillance to student empowerment</li>
+                <li>Alternative: students input goals manually, no auto-monitoring</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hat-detail hat-detail-blue" id="blue">
+          <div class="detail-top">
+            <h3>Blue Hat — Process &amp; Control</h3>
+            <span class="hat-flag">Meta-cognition</span>
+          </div>
+          <div class="detail-grid">
+            <div class="attr-box">
+              <h4>Attributes of this hat</h4>
+              <ul>
+                <li>Controls the flow of thinking</li>
+                <li>Sets the agenda &amp; order of hats</li>
+                <li>Focuses on decision-making process</li>
+                <li>Summarizes conclusions</li>
+              </ul>
+            </div>
+            <div class="attr-box">
+              <h4>Applied to the case</h4>
+              <ul>
+                <li>Agenda: evaluate the AI assistant proposal</li>
+                <li>Order: White → Red → Black → Yellow → Green → Blue</li>
+                <li>Conclusion: immediate college-wide rollout is too risky without safeguards</li>
+                <li>Next step: compile analysis into a formal proposal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Journey ===== -->
+  <section class="section journey" id="journey">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Full Journey</span>
+        <h2>From Facts to a Decision</h2>
+      </div>
+      <div class="journey-list">
+        <div class="journey-item reveal">
+          <div class="j-num">01</div>
+          <div class="j-card j-white">
+            <h3>White</h3>
+            <p>Gather the facts and name what we still need to know.</p>
+          </div>
+        </div>
+        <div class="journey-item reveal">
+          <div class="j-num">02</div>
+          <div class="j-card j-red">
+            <h3>Red</h3>
+            <p>Honour instincts — a silent tracker feels intrusive.</p>
+          </div>
+        </div>
+        <div class="journey-item reveal">
+          <div class="j-num">03</div>
+          <div class="j-card j-black">
+            <h3>Black</h3>
+            <p>Weigh data-breach and over-reliance risks carefully.</p>
+          </div>
+        </div>
+        <div class="journey-item reveal">
+          <div class="j-num">04</div>
+          <div class="j-card j-yellow">
+            <h3>Yellow</h3>
+            <p>See the real value: personalized, efficient learning.</p>
+          </div>
+        </div>
+        <div class="journey-item reveal">
+          <div class="j-num">05</div>
+          <div class="j-card j-green">
+            <h3>Green</h3>
+            <p>Devise a safe pilot and a voluntary, privacy-first plan.</p>
+          </div>
+        </div>
+        <div class="journey-item reveal">
+          <div class="j-num">06</div>
+          <div class="j-card j-blue">
+            <h3>Blue</h3>
+            <p>Manage the process and reach a measured conclusion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Conclusion ===== -->
+  <section class="section conclusion" id="conclusion">
+    <div class="section-inner">
+      <div class="conclusion-card reveal">
+        <span class="eyebrow">The Blue Hat Conclusion</span>
+        <h2>“An immediate, college-wide implementation is too risky without proper safeguards.”</h2>
+        <div class="conc-grid">
+          <div class="conc-item">
+            <h4>🛡️ Recommended path</h4>
+            <p>Pilot the AI assistant in a single tech-literate department before any broader rollout.</p>
+          </div>
+          <div class="conc-item">
+            <h4>🧭 Student agency</h4>
+            <p>Keep mentoring voluntary via a one-click opt-in — never automatic surveillance.</p>
+          </div>
+          <div class="conc-item">
+            <h4>📄 Next step</h4>
+            <p>Compile this structured analysis into a formal proposal for the college administration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Six Thinking Hats · Edward de Bono · Case Scenario 1 — AI-Based Personalized Learning Assistant</p>
+    <p class="footer-sub">Prepared for Critical Thinking · Riddhi Pankhadiwala Ma'am</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
