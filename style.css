@@ -194,6 +194,7 @@ html.js .reveal.visible { opacity: 1; transform: none; }
 
 /* ===== Footer ===== */
 .footer { text-align: center; padding: 44px 6vw; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; background: var(--bg); }
+.footer .footer-student { margin-top: 10px; font-size: .95rem; font-weight: 600; color: #c98a5e; letter-spacing: 0.5px; }
 .footer .footer-sub { margin-top: 6px; font-size: .82rem; color: #bba98f; }
 
 /* ===== Responsive ===== */
